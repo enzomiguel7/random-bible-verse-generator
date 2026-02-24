@@ -1,0 +1,6 @@
+@BibleVerseGenerator_HostAddress = http://localhost:5186
+
+GET {{BibleVerseGenerator_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
