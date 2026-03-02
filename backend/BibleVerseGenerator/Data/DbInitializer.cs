@@ -18,6 +18,31 @@ public static class DbInitializer
         { 
             PropertyNameCaseInsensitive = true 
         });
+
+        foreach (var item in data)
+        {
+            Verses verse = new Verses
+            {
+                Book = item.Book,
+                Chapter = item.Chapter,
+                Number = item.Number,
+                Text = item.Text
+            };
+
+
+            foreach (var tagName in item.Tags)
+            {
+                var tag = context.Tags.FirstOrDefault(t => t.Name == tagName)
+                ?? new Tags {Name = tagName};
+                
+                verse.verseTags.Add(new VerseTags{Verse = verse, Tag = tag});
+            }
+
+            context.Verses.Add(verse);
+        }
+
+        context.SaveChanges();
+
     }
 }
 
