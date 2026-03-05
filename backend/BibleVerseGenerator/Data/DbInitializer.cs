@@ -14,10 +14,15 @@ public static class DbInitializer
         if (!File.Exists(FilePath)) return;
 
         var json = File.ReadAllText(FilePath);
+
+        // data from the json file separated by curly braces. It is deserialized into a list of VerseSeedDto
         var data = JsonSerializer.Deserialize<List<VerseSeedDto>>(json, new JsonSerializerOptions 
         { 
             PropertyNameCaseInsensitive = true 
         });
+
+        // dictionary to track the tags
+        var tagDict = new Dictionary<string, Tags>();
 
         foreach (var item in data)
         {
@@ -30,12 +35,18 @@ public static class DbInitializer
             };
 
 
+            // for each tag in the list of tags of the DTO
             foreach (var tagName in item.Tags)
             {
-                var tag = context.Tags.FirstOrDefault(t => t.Name == tagName)
-                ?? new Tags {Name = tagName};
-                
-                verse.verseTags.Add(new VerseTags{Verse = verse, Tag = tag});
+                if (!tagDict.ContainsKey(tagName))
+                {
+                   Tags tag = new Tags
+                   {
+                       Name = tagName
+                   };
+                   tagDict.Add(tagName, tag);
+                   context.Tags.Add(tag);
+                }
             }
 
             context.Verses.Add(verse);
