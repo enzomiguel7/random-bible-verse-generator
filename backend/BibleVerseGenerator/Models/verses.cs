@@ -8,7 +8,7 @@ public class Verses
     public int Number{get; set;}
     public string Text{get; set;} = string.Empty;
 
-    public List<Tags> Tags {get;} = [];
+    public List<Tags> Tags {get; set;} = [];
      
 
 }
