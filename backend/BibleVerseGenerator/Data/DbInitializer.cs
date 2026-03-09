@@ -31,22 +31,24 @@ public static class DbInitializer
                 Book = item.Book,
                 Chapter = item.Chapter,
                 Number = item.Number,
-                Text = item.Text
+                Text = item.Text,
             };
 
 
-            // for each tag in the list of tags of the DTO
             foreach (var tagName in item.Tags)
             {
+                // Cria uma referência, se a tag não está no dicionario cria um objeto para a referênciae
+                Tags tag = null;
                 if (!tagDict.ContainsKey(tagName))
                 {
-                   Tags tag = new Tags
+                   tag = new Tags
                    {
                        Name = tagName
                    };
                    tagDict.Add(tagName, tag);
                    context.Tags.Add(tag);
                 }
+                verse.Tags.Add(tag);
             }
 
             context.Verses.Add(verse);
@@ -62,8 +64,9 @@ public class VerseSeedDto
 {
     public int Id {get; set;}
     public string Book{get; set;} = string.Empty;
-    public byte Chapter{get; set;}
-    public int Number{get; set;}
+    public byte Chapter{get; set;} 
+    public string Number{get; set;} = string.Empty;
+
     public string Text{get; set;} = string.Empty;
      
     public List<string> Tags { get; set; } = new();

@@ -1,9 +1,143 @@
 [
     {
         "Book": "2 Corinthians",
-        "Chapter": 12, 
+        "Chapter": "12", 
         "Number": 9,
         "Text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
-        "Tags" : ["grace"]
-    }
+        "Tags": ["grace", "weakness", "power of God", "Christ"]
+    },
+
+    {
+        "Book": "Genesis",
+        "Chapter":"3", 
+        "Number":15,
+        "Text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "Philippians",
+        "Chapter":"4",
+        "Number":6,
+        "Text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "John",
+        "Chapter":"14", 
+        "Number":6,
+        "Text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "Romans",
+        "Chapter":"6", 
+        "Number":23,
+        "Text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "Romans",
+        "Chapter":6, 
+        "Number":"1-4",
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
+    {
+        "Book": "",
+        "Chapter":, 
+        "Number":,
+        "Text": "",
+        "Tags": ["", "", "", ""]
+    },
 ]
