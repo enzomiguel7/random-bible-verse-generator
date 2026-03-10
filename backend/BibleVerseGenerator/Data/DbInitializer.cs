@@ -30,7 +30,7 @@ public static class DbInitializer
             {
                 Book = item.Book,
                 Chapter = item.Chapter,
-                Number = item.Number,
+                Verse = item.Verse,
                 Text = item.Text,
             };
 
@@ -65,7 +65,7 @@ public class VerseSeedDto
     public int Id {get; set;}
     public string Book{get; set;} = string.Empty;
     public byte Chapter{get; set;} 
-    public string Number{get; set;} = string.Empty;
+    public string Verse{get; set;} = string.Empty;
 
     public string Text{get; set;} = string.Empty;
      

@@ -1,143 +1,142 @@
 [
-    {
-        "Book": "2 Corinthians",
-        "Chapter": "12", 
-        "Number": 9,
-        "Text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
-        "Tags": ["grace", "weakness", "power of God", "Christ"]
-    },
-
-    {
-        "Book": "Genesis",
-        "Chapter":"3", 
-        "Number":15,
-        "Text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "Philippians",
-        "Chapter":"4",
-        "Number":6,
-        "Text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "John",
-        "Chapter":"14", 
-        "Number":6,
-        "Text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "Romans",
-        "Chapter":"6", 
-        "Number":23,
-        "Text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "Romans",
-        "Chapter":6, 
-        "Number":"1-4",
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
-    {
-        "Book": "",
-        "Chapter":, 
-        "Number":,
-        "Text": "",
-        "Tags": ["", "", "", ""]
-    },
+  {
+    "Book": "2 Corinthians",
+    "Chapter": 12,
+    "Verse": "9",
+    "Text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
+    "Tags": ["Grace", "Weakness", "Power of God", "Christ", "New Testament"]
+  },
+  {
+    "Book": "Genesis",
+    "Chapter": 3,
+    "Verse": "15",
+    "Text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
+    "Tags": ["Old Testament", "Salvation"]
+  },
+  {
+    "Book": "Philippians",
+    "Chapter": 4,
+    "Verse": "6",
+    "Text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
+    "Tags": ["Prayer", "New Testament"]
+  },
+  {
+    "Book": "John",
+    "Chapter": 14,
+    "Verse": "6",
+    "Text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
+    "Tags": ["Christ", "Salvation", "New Testament"]
+  },
+  {
+    "Book": "Romans",
+    "Chapter": 6,
+    "Verse": "23",
+    "Text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+    "Tags": ["Sin", "Grace", "Christ", "Salvation", "New Testament"]
+  },
+  {
+    "Book": "Romans",
+    "Chapter": 6,
+    "Verse": "1-4",
+    "Text": "[1] What then shall we say? Shall we persist in sin that grace may abound? Of course not! [2] How can we who died to sin yet live in it?b [3] Or are you unaware that we who were baptized into Christ Jesus were baptized into his death? [4] We were indeed buried with him through baptism into death, so that, just as Christ was raised from the dead by the glory of the Father, we too might live in newness of life.",
+    "Tags": ["Sin", "Grace", "Christ", "New Testament"]
+  },
+  {
+    "Book": "John",
+    "Chapter": 1,
+    "Verse": "1",
+    "Text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+    "Tags": ["Christ", "Power of God", "New Testament"]
+  },
+  {
+    "Book": "John",
+    "Chapter": 2,
+    "Verse": "11",
+    "Text": "Jesus did this as the beginning of his signs* in Cana in Galilee and so revealed his glory, and his disciples began to believe in him.",
+    "Tags": ["Christ", "Power of God", "New Testament"]
+  },
+  {
+    "Book": "Luke",
+    "Chapter": 1,
+    "Verse": "28",
+    "Text": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+    "Tags": ["Mary", "Grace", "New Testament"]
+  },
+  {
+    "Book": "Luke",
+    "Chapter": 1,
+    "Verse": "40-42",
+    "Text": "[41] And it came to pass, that when Elizabeth heard the salutation of Mary, the infant leaped in her womb. And Elizabeth was filled with the Holy Ghost: [42] And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+    "Tags": ["Mary", "New Testament"]
+  },
+  {
+    "Book": "Proverbs",
+    "Chapter": 1,
+    "Verse": "7",
+    "Text": "The fear of the Lord is the beginning of wisdom. Fools despise wisdom and instruction.",
+    "Tags": ["Old Testament", "Power of God", "Wisdom"]
+  },
+  {
+    "Book": "Proverbs",
+    "Chapter": 3,
+    "Verse": "1-5",
+    "Text": "[1] My son, forget not my law, and let thy heart keep my commandments. [2] For they shall add to thee length of days, and years of life and peace. [3] Let not mercy and truth leave thee, put them about thy neck, and write them in the tables of thy heart: [4] And thou shalt find grace and good understanding before God and men. [5] Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+    "Tags": ["Grace", "Old Testament", "Wisdom"]
+  },
+  {
+    "Book": "Psalm",
+    "Chapter": 4,
+    "Verse": "2",
+    "Text": "When I called upon him, the God of my justice heard me: when I was in distress, thou hast enlarged me. Have mercy on me: and hear my prayer.",
+    "Tags": ["Prayer", "Old Testament", "Weakness"]
+  },
+  {
+    "Book": "John",
+    "Chapter": 3,
+    "Verse": "16",
+    "Text": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+    "Tags": ["Salvation", "Christ", "Grace", "New Testament"]
+  },
+  {
+    "Book": "Mark",
+    "Chapter": 11,
+    "Verse": "24",
+    "Text": "Therefore I say unto you, all things, whatsoever you ask when ye pray, believe that you shall receive; and they shall come unto you.",
+    "Tags": ["Prayer", "New Testament"]
+  },
+  {
+    "Book": "Wisdom",
+    "Chapter": 3,
+    "Verse": "1",
+    "Text": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+    "Tags": ["Old Testament", "Salvation", "Power of God", "Wisdom"]
+  },
+  {
+    "Book": "2 Peter",
+    "Chapter": 3,
+    "Verse": "18",
+    "Text": "But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and unto the day of eternity. Amen.",
+    "Tags": ["Grace", "Christ", "New Testament", "Wisdom"]
+  },
+  {
+    "Book": "Luke",
+    "Chapter": 1,
+    "Verse": "48",
+    "Text": "Because he hath regarded the humility of his handmaid; for behold from henceforth all generations shall call me blessed.",
+    "Tags": ["Mary", "New Testament"]
+  },
+  {
+    "Book": "Proverbs",
+    "Chapter": 8,
+    "Verse": "11",
+    "Text": "For wisdom is better than all the most precious things: and whatsoever may be desired cannot be compared to it. ",
+    "Tags": ["Old Testament", "Wisdom"]
+  },
+  {
+    "Book": "Philippians",
+    "Chapter": 4,
+    "Verse": "13",
+    "Text": "I can do all these things in him who strengtheneth me.",
+    "Tags": ["Power of God", "Weakness", "New Testament"]
+  }
 ]
