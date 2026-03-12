@@ -32,6 +32,7 @@ public static class DbInitializer
                 Chapter = item.Chapter,
                 Verse = item.Verse,
                 Text = item.Text,
+                Tags = new List<Tags>()
             };
 
 
@@ -39,16 +40,18 @@ public static class DbInitializer
             {
                 // Cria uma referência, se a tag não está no dicionario cria um objeto para a referênciae
                 Tags tag = null;
+
                 if (!tagDict.ContainsKey(tagName))
                 {
-                   tag = new Tags
-                   {
-                       Name = tagName
-                   };
+                   tag = new Tags{Name = tagName};
                    tagDict.Add(tagName, tag);
                    context.Tags.Add(tag);
                 }
-                verse.Tags.Add(tag);
+                else
+                {
+                    tag = tagDict[tagName];
+                }
+              verse.Tags.Add(tag);
             }
 
             context.Verses.Add(verse);
