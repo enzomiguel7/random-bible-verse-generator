@@ -17,8 +17,17 @@ using (var scope = app.Services.CreateScope())
    DbInitializer.Seed(context);
    context.SaveChanges();
 }
-
 app.MapGet("/verses", async (BibleContext bc) => 
-   await bc.Verses.ToListAsync());
-
+    await bc.Verses
+        .Include(v => v.Tags) 
+        .Select(v => new {    
+            v.Id,
+            v.Book,
+            v.Chapter,
+            v.Verse,
+            v.Text,
+            Tags = v.Tags.Select(t => t.Name).ToList() // This breaks the loop!
+        })
+        .ToListAsync());
+        
 app.Run();

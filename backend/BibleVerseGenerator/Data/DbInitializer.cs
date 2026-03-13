@@ -1,3 +1,4 @@
+using System.Diagnostics;
 using System.Text.Json;
 using BibleVerseGenerator.Models;
 
@@ -38,6 +39,7 @@ public static class DbInitializer
 
             foreach (var tagName in item.Tags)
             {
+                Console.WriteLine("tags");
                 // Cria uma referência, se a tag não está no dicionario cria um objeto para a referênciae
                 Tags tag = null;
 
@@ -46,12 +48,14 @@ public static class DbInitializer
                    tag = new Tags{Name = tagName};
                    tagDict.Add(tagName, tag);
                    context.Tags.Add(tag);
+                   verse.Tags.Add(tag);
                 }
                 else
                 {
                     tag = tagDict[tagName];
+                    verse.Tags.Add(tag);
                 }
-              verse.Tags.Add(tag);
+              Console.WriteLine($"{tag} added to {verse}");
             }
 
             context.Verses.Add(verse);
