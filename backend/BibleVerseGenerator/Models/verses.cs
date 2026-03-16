@@ -3,6 +3,7 @@ namespace BibleVerseGenerator.Models;
 public class Verses
 {
     public int Id {get; set;}
+    public string Reference{get; set;} = string.Empty;
     public string Book{get; set;} = string.Empty;
     public byte Chapter{get; set;} 
     public string Verse{get; set;} = string.Empty;

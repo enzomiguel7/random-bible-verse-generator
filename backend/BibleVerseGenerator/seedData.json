@@ -1,142 +1,162 @@
 [
   {
-    "Book": "2 Corinthians",
-    "Chapter": 12,
-    "Verse": "9",
-    "Text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
-    "Tags": ["Grace", "Weakness", "Power of God", "Christ", "New Testament"]
+    "reference": "2 Corinthians 12:9",
+    "book": "2 Corinthians",
+    "chapter": 12,
+    "verse": "9",
+    "text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
+    "tags": ["grace", "weakness", "power_of_god", "christ", "new_testament"]
   },
   {
-    "Book": "Genesis",
-    "Chapter": 3,
-    "Verse": "15",
-    "Text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
-    "Tags": ["Old Testament", "Salvation"]
+    "reference": "Genesis 3:15",
+    "book": "Genesis",
+    "chapter": 3,
+    "verse": "15",
+    "text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
+    "tags": ["old_testament", "salvation"]
   },
   {
-    "Book": "Philippians",
-    "Chapter": 4,
-    "Verse": "6",
-    "Text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
-    "Tags": ["Prayer", "New Testament"]
+    "reference": "Philippians 4:6",
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": "6",
+    "text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
+    "tags": ["prayer", "new_testament"]
   },
   {
-    "Book": "John",
-    "Chapter": 14,
-    "Verse": "6",
-    "Text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
-    "Tags": ["Christ", "Salvation", "New Testament"]
+    "reference": "John 14:6",
+    "book": "John",
+    "chapter": 14,
+    "verse": "6",
+    "text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
+    "tags": ["christ", "salvation", "new_testament"]
   },
   {
-    "Book": "Romans",
-    "Chapter": 6,
-    "Verse": "23",
-    "Text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
-    "Tags": ["Sin", "Grace", "Christ", "Salvation", "New Testament"]
+    "reference": "Romans 6:23",
+    "book": "Romans",
+    "chapter": 6,
+    "verse": "23",
+    "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+    "tags": ["sin", "grace", "christ", "salvation", "new_testament"]
   },
   {
-    "Book": "Romans",
-    "Chapter": 6,
-    "Verse": "1-4",
-    "Text": "[1] What then shall we say? Shall we persist in sin that grace may abound? Of course not! [2] How can we who died to sin yet live in it?b [3] Or are you unaware that we who were baptized into Christ Jesus were baptized into his death? [4] We were indeed buried with him through baptism into death, so that, just as Christ was raised from the dead by the glory of the Father, we too might live in newness of life.",
-    "Tags": ["Sin", "Grace", "Christ", "New Testament"]
+    "reference": "Romans 6:1-4",
+    "book": "Romans",
+    "chapter": 6,
+    "verse": "1-4",
+    "text": "[1] What then shall we say? Shall we persist in sin that grace may abound? Of course not! [2] How can we who died to sin yet live in it?b [3] Or are you unaware that we who were baptized into Christ Jesus were baptized into his death? [4] We were indeed buried with him through baptism into death, so that, just as Christ was raised from the dead by the glory of the Father, we too might live in newness of life.",
+    "tags": ["sin", "grace", "christ", "new_testament"]
   },
   {
-    "Book": "John",
-    "Chapter": 1,
-    "Verse": "1",
-    "Text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
-    "Tags": ["Christ", "Power of God", "New Testament"]
+    "reference": "John 1:1",
+    "book": "John",
+    "chapter": 1,
+    "verse": "1",
+    "text": "In the beginning was the Word, and the Word was with God, and the Word was God.",
+    "tags": ["christ", "power_of_god", "new_testament"]
   },
   {
-    "Book": "John",
-    "Chapter": 2,
-    "Verse": "11",
-    "Text": "Jesus did this as the beginning of his signs* in Cana in Galilee and so revealed his glory, and his disciples began to believe in him.",
-    "Tags": ["Christ", "Power of God", "New Testament"]
+    "reference": "John 2:11",
+    "book": "John",
+    "chapter": 2,
+    "verse": "11",
+    "text": "Jesus did this as the beginning of his signs* in Cana in Galilee and so revealed his glory, and his disciples began to believe in him.",
+    "tags": ["christ", "power_of_god", "new_testament"]
   },
   {
-    "Book": "Luke",
-    "Chapter": 1,
-    "Verse": "28",
-    "Text": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
-    "Tags": ["Mary", "Grace", "New Testament"]
+    "reference": "Luke 1:28",
+    "book": "Luke",
+    "chapter": 1,
+    "verse": "28",
+    "text": "And the angel being come in, said unto her: Hail, full of grace, the Lord is with thee: blessed art thou among women.",
+    "tags": ["mary", "grace", "new_testament"]
   },
   {
-    "Book": "Luke",
-    "Chapter": 1,
-    "Verse": "40-42",
-    "Text": "[41] And it came to pass, that when Elizabeth heard the salutation of Mary, the infant leaped in her womb. And Elizabeth was filled with the Holy Ghost: [42] And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
-    "Tags": ["Mary", "New Testament"]
+    "reference": "Luke 1:40-42",
+    "book": "Luke",
+    "chapter": 1,
+    "verse": "40-42",
+    "text": "[41] And it came to pass, that when Elizabeth heard the salutation of Mary, the infant leaped in her womb. And Elizabeth was filled with the Holy Ghost: [42] And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
+    "tags": ["mary", "new_testament"]
   },
   {
-    "Book": "Proverbs",
-    "Chapter": 1,
-    "Verse": "7",
-    "Text": "The fear of the Lord is the beginning of wisdom. Fools despise wisdom and instruction.",
-    "Tags": ["Old Testament", "Power of God", "Wisdom"]
+    "reference": "Proverbs 1:7",
+    "book": "Proverbs",
+    "chapter": 1,
+    "verse": "7",
+    "text": "The fear of the Lord is the beginning of wisdom. Fools despise wisdom and instruction.",
+    "tags": ["old_testament", "power_of_god", "wisdom"]
   },
   {
-    "Book": "Proverbs",
-    "Chapter": 3,
-    "Verse": "1-5",
-    "Text": "[1] My son, forget not my law, and let thy heart keep my commandments. [2] For they shall add to thee length of days, and years of life and peace. [3] Let not mercy and truth leave thee, put them about thy neck, and write them in the tables of thy heart: [4] And thou shalt find grace and good understanding before God and men. [5] Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
-    "Tags": ["Grace", "Old Testament", "Wisdom"]
+    "reference": "Proverbs 3:1-5",
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": "1-5",
+    "text": "[1] My son, forget not my law, and let thy heart keep my commandments. [2] For they shall add to thee length of days, and years of life and peace. [3] Let not mercy and truth leave thee, put them about thy neck, and write them in the tables of thy heart: [4] And thou shalt find grace and good understanding before God and men. [5] Have confidence in the Lord with all thy heart, and lean not upon thy own prudence.",
+    "tags": ["grace", "old_testament", "wisdom"]
   },
   {
-    "Book": "Psalm",
-    "Chapter": 4,
-    "Verse": "2",
-    "Text": "When I called upon him, the God of my justice heard me: when I was in distress, thou hast enlarged me. Have mercy on me: and hear my prayer.",
-    "Tags": ["Prayer", "Old Testament", "Weakness"]
+    "reference": "Psalm 4:2",
+    "book": "Psalm",
+    "chapter": 4,
+    "verse": "2",
+    "text": "When I called upon him, the God of my justice heard me: when I was in distress, thou hast enlarged me. Have mercy on me: and hear my prayer.",
+    "tags": ["prayer", "old_testament", "weakness"]
   },
   {
-    "Book": "John",
-    "Chapter": 3,
-    "Verse": "16",
-    "Text": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
-    "Tags": ["Salvation", "Christ", "Grace", "New Testament"]
+    "reference": "John 3:16",
+    "book": "John",
+    "chapter": 3,
+    "verse": "16",
+    "text": "For God so loved the world, as to give his only begotten Son; that whosoever believeth in him, may not perish, but may have life everlasting.",
+    "tags": ["salvation", "christ", "grace", "new_testament"]
   },
   {
-    "Book": "Mark",
-    "Chapter": 11,
-    "Verse": "24",
-    "Text": "Therefore I say unto you, all things, whatsoever you ask when ye pray, believe that you shall receive; and they shall come unto you.",
-    "Tags": ["Prayer", "New Testament"]
+    "reference": "Mark 11:24",
+    "book": "Mark",
+    "chapter": 11,
+    "verse": "24",
+    "text": "Therefore I say unto you, all things, whatsoever you ask when ye pray, believe that you shall receive; and they shall come unto you.",
+    "tags": ["prayer", "new_testament"]
   },
   {
-    "Book": "Wisdom",
-    "Chapter": 3,
-    "Verse": "1",
-    "Text": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
-    "Tags": ["Old Testament", "Salvation", "Power of God", "Wisdom"]
+    "reference": "Wisdom 3:1",
+    "book": "Wisdom",
+    "chapter": 3,
+    "verse": "1",
+    "text": "But the souls of the just are in the hand of God, and the torment of death shall not touch them.",
+    "tags": ["old_testament", "salvation", "power_of_god", "wisdom"]
   },
   {
-    "Book": "2 Peter",
-    "Chapter": 3,
-    "Verse": "18",
-    "Text": "But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and unto the day of eternity. Amen.",
-    "Tags": ["Grace", "Christ", "New Testament", "Wisdom"]
+    "reference": "2 Peter 3:18",
+    "book": "2 Peter",
+    "chapter": 3,
+    "verse": "18",
+    "text": "But grow in grace, and in the knowledge of our Lord and Saviour Jesus Christ. To him be glory both now and unto the day of eternity. Amen.",
+    "tags": ["grace", "christ", "new_testament", "wisdom"]
   },
   {
-    "Book": "Luke",
-    "Chapter": 1,
-    "Verse": "48",
-    "Text": "Because he hath regarded the humility of his handmaid; for behold from henceforth all generations shall call me blessed.",
-    "Tags": ["Mary", "New Testament"]
+    "reference": "Luke 1:48",
+    "book": "Luke",
+    "chapter": 1,
+    "verse": "48",
+    "text": "Because he hath regarded the humility of his handmaid; for behold from henceforth all generations shall call me blessed.",
+    "tags": ["mary", "new_testament"]
   },
   {
-    "Book": "Proverbs",
-    "Chapter": 8,
-    "Verse": "11",
-    "Text": "For wisdom is better than all the most precious things: and whatsoever may be desired cannot be compared to it. ",
-    "Tags": ["Old Testament", "Wisdom"]
+    "reference": "Proverbs 8:11",
+    "book": "Proverbs",
+    "chapter": 8,
+    "verse": "11",
+    "text": "For wisdom is better than all the most precious things: and whatsoever may be desired cannot be compared to it.",
+    "tags": ["old_testament", "wisdom"]
   },
   {
-    "Book": "Philippians",
-    "Chapter": 4,
-    "Verse": "13",
-    "Text": "I can do all these things in him who strengtheneth me.",
-    "Tags": ["Power of God", "Weakness", "New Testament"]
+    "reference": "Philippians 4:13",
+    "book": "Philippians",
+    "chapter": 4,
+    "verse": "13",
+    "text": "I can do all these things in him who strengtheneth me.",
+    "tags": ["power_of_god", "weakness", "new_testament"]
   }
 ]

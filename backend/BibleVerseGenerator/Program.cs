@@ -16,6 +16,10 @@ var app = builder.Build();
 using (var scope = app.Services.CreateScope())
 {
    var context = scope.ServiceProvider.GetRequiredService<BibleContext>();
+
+   context.Database.EnsureDeleted();
+   context.Database.EnsureCreated();
+
    DbInitializer.Seed(context);
    context.SaveChanges();
 }
@@ -24,6 +28,7 @@ app.MapGet("/verses", async (BibleContext bc) =>
     await bc.Verses.Include(v => v.Tags).Select(v => new
         {
          v.Id,
+         v.Reference,
          v.Book,
          v.Chapter,
          v.Text,
@@ -32,8 +37,12 @@ app.MapGet("/verses", async (BibleContext bc) =>
         ).ToListAsync()
 );
 
-app.MapGet("/verses/{tag}", async (string tag, BibleContext bc) =>
-    await bc.Verses.Where(v => v.Tags.Any(t => t.Name == tag)).ToListAsync()
+app.MapGet("/randomverse/{tag}", async (string tag, BibleContext bc) =>
+{
+
+    var searchTag = tag.ToLower().Trim();
+    return await bc.Verses.Where(v => v.Tags.Any(t => t.Name.ToLower() == searchTag)).ToListAsync();
+}
 );
         
 app.Run();
