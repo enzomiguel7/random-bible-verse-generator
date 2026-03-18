@@ -1,6 +1,7 @@
 using System.Runtime.InteropServices;
 using BibleVerseGenerator.Data;
 using BibleVerseGenerator.Models;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi;
 
@@ -26,11 +27,16 @@ app.MapGet("/verses", async (BibleContext bc) =>
      await bc.Verses.ConvertToDto().ToListAsync()
 );
 
-app.MapGet("/randomverse/{tag}", async (string tag, BibleContext bc) =>
+app.MapGet("/randomverse", async ( string[]? tag, BibleContext bc) =>
 {
-
-    var searchTag = tag.ToLower().Trim();
-    return await bc.Verses.Where(v => v.Tags.Any(t => t.Name.ToLower() == searchTag)).ConvertToDto().ToListAsync();
+   if (tag != null && tag.Length > 0)
+   {
+    var searchTag = tag.Select(t => t.ToLower().Trim());
+    return await bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)))
+    .ConvertToDto()
+    .ToListAsync();
+   }
+   else return await bc.Verses.ConvertToDto().ToListAsync();
 }
 );
 
