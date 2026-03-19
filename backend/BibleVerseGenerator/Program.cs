@@ -29,9 +29,17 @@ using (var scope = app.Services.CreateScope())
    context.SaveChanges();
 }
 
-app.MapGet("/verses", async (BibleContext bc) => 
-     await bc.Verses.ConvertToDto().ToListAsync()
-);
+app.MapGet("/verses", async (string[]? tag, BibleContext bc) =>
+{
+     if (tag != null & tag.Length > 0)
+     {
+       var searchTag = tag.Select(t => t.ToLower().Trim());
+       return await bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)))
+       .ConvertToDto()
+       .ToListAsync();
+     }
+     return await bc.Verses.ConvertToDto().ToListAsync();
+});
 
 app.MapGet("/randomverse", async ( string[]? tag, BibleContext bc) =>
 {
