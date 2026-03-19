@@ -3,9 +3,15 @@ using BibleVerseGenerator.Data;
 using BibleVerseGenerator.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.ConfigureHttpJsonOptions(opt =>
+{
+    opt.SerializerOptions.WriteIndented = true;
+});
 
 builder.Services.AddDbContext<BibleContext>(opt => opt.UseSqlite("Data Source=Bible.db"));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
@@ -32,11 +38,18 @@ app.MapGet("/randomverse", async ( string[]? tag, BibleContext bc) =>
    if (tag != null && tag.Length > 0)
    {
     var searchTag = tag.Select(t => t.ToLower().Trim());
-    return await bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)))
-    .ConvertToDto()
-    .ToListAsync();
+    var query =  bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)));
+
+    var count = await query.CountAsync();
+    var randomIndex = Random.Shared.Next(count);
+
+    return await query.Skip(randomIndex).ConvertToDto().FirstOrDefaultAsync();
+
    }
-   else return await bc.Verses.ConvertToDto().ToListAsync();
+
+   var count2 = await bc.Verses.CountAsync();
+   var randomIndex2 = Random.Shared.Next(count2);
+   return await bc.Verses.Skip(randomIndex2).Take(1).ConvertToDto().FirstOrDefaultAsync();
 }
 );
 

@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using BibleVerseGenerator.Models;
+using System.ComponentModel;
 
 public class BibleContext : DbContext
 {
