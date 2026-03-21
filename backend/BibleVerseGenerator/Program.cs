@@ -31,17 +31,20 @@ using (var scope = app.Services.CreateScope())
 
 app.MapGet("/verses", async (string[]? tag, BibleContext bc) =>
 {
+     var verses = await bc.Verses.ConvertToDto().ToListAsync();
+
      if (tag != null & tag.Length > 0)
      {
        var searchTag = tag.Select(t => t.ToLower().Trim());
-       var TaggedVerses = await bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)))
+       verses = await bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)))
        .ConvertToDto()
        .ToListAsync();
-
-       return Results.Ok(TaggedVerses);
      }
-     
-     var verses = await bc.Verses.ConvertToDto().ToListAsync();
+     var count = verses.Count();
+     if (count == 0)
+     {
+       return Results.NotFound("No verses were found with those tags.");
+     }
      return Results.Ok(verses);
 });
 
