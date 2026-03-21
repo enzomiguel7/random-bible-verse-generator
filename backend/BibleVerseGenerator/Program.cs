@@ -43,21 +43,24 @@ app.MapGet("/verses", async (string[]? tag, BibleContext bc) =>
 
 app.MapGet("/randomverse", async ( string[]? tag, BibleContext bc) =>
 {
+   var query = bc.Verses.AsQueryable();
+
    if (tag != null && tag.Length > 0)
    {
     var searchTag = tag.Select(t => t.ToLower().Trim());
-    var query =  bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)));
+    query =  bc.Verses.Where(v => searchTag.All(st => v.Tags.Any(t => t.Name == st)));
+   }
+   
+   var count = await query.CountAsync();
 
-    var count = await query.CountAsync();
-    var randomIndex = Random.Shared.Next(count);
-
-    return await query.Skip(randomIndex).ConvertToDto().FirstOrDefaultAsync();
-
+   if (count == 0)
+   {
+     return Results.NotFound("No verses were found with those tags.") ;
    }
 
-   var count2 = await bc.Verses.CountAsync();
-   var randomIndex2 = Random.Shared.Next(count2);
-   return await bc.Verses.Skip(randomIndex2).Take(1).ConvertToDto().FirstOrDefaultAsync();
+   var randomIndex = Random.Shared.Next(count);
+   var returnedVerse = await query.Skip(randomIndex).ConvertToDto().FirstOrDefaultAsync();
+   return Results.Ok(returnedVerse);
 }
 );
 
