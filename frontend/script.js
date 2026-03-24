@@ -1,30 +1,26 @@
-const API_URL = 'http://localhost:5186'; // Ajuste se sua porta for diferente
+const API_URL = 'http://localhost:5186';
 
-// Lista oficial das suas tags
-// Lista oficial das suas tags
 const ALL_TAGS = [
     'grace', 'weakness', 'power_of_God', 'christ', 'mary', 
     'old_testament', 'new_testament', 'salvation', 'sin', 'prayer', 'wisdom'
 ];
 
-// Set para armazenar as tags que o usuário selecionou
 let selectedTags = new Set();
 
 const textEl = document.getElementById('verse-text');
 const refEl = document.getElementById('verse-reference');
 const tagsContainer = document.getElementById('available-tags');
+const tagsDisplayEl = document.getElementById('verse-tags-display');
+const loadingEl = document.getElementById('loading-indicator');
 const btn = document.getElementById('btn-reveal');
 
-// 1. Gera os botões de tags na tela
 function renderTagButtons() {
     tagsContainer.innerHTML = '';
     ALL_TAGS.forEach(tag => {
         const btnTag = document.createElement('button');
-        // Estilo Glassmorphism para os botões
-        btnTag.className = 'px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm transition-all hover:bg-white/10';
-        btnTag.innerText = tag.replace(/_/g, ' '); // Troca underline por espaço no visual
+        btnTag.className = 'px-4 py-2 rounded-xl bg-white/5 border border-white/10 text-sm transition-all hover:bg-white/10 active:scale-90';
+        btnTag.innerText = tag.replace(/_/g, ' ');
         
-        // Evento de clique para selecionar/deselecionar
         btnTag.onclick = () => {
             if (selectedTags.has(tag)) {
                 selectedTags.delete(tag);
@@ -34,68 +30,69 @@ function renderTagButtons() {
                 btnTag.classList.add('tag-active');
             }
         };
-        
         tagsContainer.appendChild(btnTag);
     });
 }
 
-// 2. Busca o versículo na API usando as tags selecionadas
-const verseTagsDisplay = document.getElementById('verse-tags-display'); // Seleciona o novo container
-
-const loadingIndicator = document.getElementById('loading-indicator');
-
 async function loadVerse() {
-    try {
-        // 1. Inicia o estado de Loading
-        btn.disabled = true;
-        loadingIndicator.classList.remove('opacity-0', 'pointer-events-none');
-        textEl.classList.add('blur-sm'); // Efeito de desfoque no texto antigo
+    const startTime = Date.now();
+    const minWait = 700; 
 
-        const startTime = Date.now(); // Marca quando a busca começou
+    try {
+        btn.disabled = true;
+        loadingEl.classList.remove('opacity-0', 'pointer-events-none');
+        textEl.style.filter = 'blur(8px)';
+        textEl.style.opacity = '0.3';
 
         let url = `${API_URL}/randomverse`;
         if (selectedTags.size > 0) {
             const params = new URLSearchParams();
-            selectedTags.forEach(tag => params.append('tag', tag));
+            selectedTags.forEach(t => params.append('tag', t));
             url += `?${params.toString()}`;
         }
 
-        // 2. Faz a chamada para a API
         const response = await fetch(url);
-        const data = await response.json();
-
-        // 3. GARANTE UM TEMPO MÍNIMO (ex: 600ms)
-        const duration = Date.now() - startTime;
-        const minimumWait = 600; 
         
-        if (duration < minimumWait) {
-            await new Promise(resolve => setTimeout(resolve, minimumWait - duration));
+        const elapsed = Date.now() - startTime;
+        if (elapsed < minWait) await new Promise(r => setTimeout(r, minWait - elapsed));
+
+        if (response.status === 404) {
+            textEl.innerText = "No verse found with these tags. Try another combination!";
+            refEl.innerText = "";      
+            tagsDisplayEl.innerHTML = ""; 
+            return; 
         }
 
-        // 4. Atualiza a Interface após o "delay artificial"
-        if (response.status === 200) {
-            textEl.innerText = data.text;
-            refEl.innerText = data.reference || `${data.book} ${data.chapter}:${data.verse}`;
+        if (!response.ok) throw new Error("API response error");
 
-            verseTagsDisplay.innerHTML = '';
-            data.tags.forEach(tag => {
-                const span = document.createElement('span');
-                span.className = 'px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-[10px] uppercase tracking-widest text-primary/80 font-bold';
-                span.innerText = tag.replace(/_/g, ' ');
-                verseTagsDisplay.appendChild(span);
+        const data = await response.json();
+        
+        textEl.innerText = data.text;
+        refEl.innerText = data.reference || `${data.book} ${data.chapter}:${data.verse}`;
+        
+        tagsDisplayEl.innerHTML = '';
+        if (data.tags) {
+            data.tags.forEach(t => {
+                const s = document.createElement('span');
+                s.className = 'px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-[10px] uppercase tracking-widest text-primary/80 font-bold whitespace-nowrap';
+                s.innerText = t.replace(/_/g, ' ');
+                tagsDisplayEl.appendChild(s);
             });
         }
 
-    } catch (error) {
-        textEl.innerText = "Erro ao carregar versículo.";
+    } catch (e) {
+        console.error("Detailed error:", e);
+        textEl.innerText = "Error connecting to the API. Check if the C# server is running at " + API_URL;
+        refEl.innerText = "";
+        tagsDisplayEl.innerHTML = "";
     } finally {
-        // 5. Finaliza o estado de Loading
-        loadingIndicator.classList.add('opacity-0', 'pointer-events-none');
-        textEl.classList.remove('blur-sm');
+        loadingEl.classList.add('opacity-0', 'pointer-events-none');
+        textEl.style.filter = 'none';
+        textEl.style.opacity = '1';
         btn.disabled = false;
     }
 }
 
-// Inicialização
 renderTagButtons();
 btn.addEventListener('click', loadVerse);
+window.addEventListener('DOMContentLoaded', loadVerse);
