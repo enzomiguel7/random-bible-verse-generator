@@ -318,5 +318,85 @@
     "verse": "13",
     "text": "If you then, being evil, know how to give good gifts to your children, how much more will your Father from heaven give the good Spirit to them that ask him?",
     "tags": ["holy_spirit", "new_testament", "prayer"]
+  },
+  {
+    "reference": "Psalm 22:1-3",
+    "book": "Psalm",
+    "chapter": 22,
+    "verse": "1-3",
+    "text": "[1] The Lord ruleth me: and I shall want nothing. [2] He hath set me in a place of pasture. He hath brought me up, on the water of refreshment: [3] He hath converted my soul. He hath led me on the paths of justice, for his own name's sake.",
+    "tags": ["power_of_god", "old_testament", "grace"]
+  },
+  {
+    "reference": "Wisdom 7:22-23",
+    "book": "Wisdom",
+    "chapter": 7,
+    "verse": "22-23",
+    "text": "[22] For in her is the spirit of understanding: holy, one, manifold, subtile, eloquent, active, undefiled, sure, sweet, loving that which is good, quick, which nothing hindereth, beneficent, [23] Gentle, kind, steadfast, assured, secure, having all power, overseeing all things, and containing all spirits, intelligible, pure, subtile.",
+    "tags": ["wisdom", "holy_spirit", "old_testament"]
+  },
+  {
+    "reference": "John 2:3-5",
+    "book": "John",
+    "chapter": 2,
+    "verse": "3-5",
+    "text": "[3] And the wine failing, the mother of Jesus saith to him: They have no wine. [4] And Jesus saith to her: Woman, what is that to me and to thee? my hour is not yet come. [5] His mother saith to the waiters: Whatsoever he shall say to you, do ye.",
+    "tags": ["mary", "christ", "new_testament"]
+  },
+  {
+    "reference": "Matthew 16:18",
+    "book": "Matthew",
+    "chapter": 16,
+    "verse": "18",
+    "text": "And I say to thee: That thou art Peter; and upon this rock I will build my church, and the gates of hell shall not prevail against it.",
+    "tags": ["power_of_god", "christ", "new_testament"]
+  },
+  {
+    "reference": "Revelation 12:1",
+    "book": "Revelation",
+    "chapter": 12,
+    "verse": "1",
+    "text": "And a great sign appeared in heaven: A woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars.",
+    "tags": ["mary", "new_testament", "power_of_god"]
+  },
+  {
+    "reference": "Romans 8:26",
+    "book": "Romans",
+    "chapter": 8,
+    "verse": "26",
+    "text": "Likewise the Spirit also helpeth our infirmity. For we know not what we should pray for as we ought; but the Spirit himself asketh for us with unspeakable groanings.",
+    "tags": ["holy_spirit", "prayer", "weakness", "new_testament"]
+  },
+  {
+    "reference": "Sirach 1:1",
+    "book": "Sirach",
+    "chapter": 1,
+    "verse": "1",
+    "text": "All wisdom is from the Lord God, and hath been always with him, and is before all time.",
+    "tags": ["wisdom", "old_testament", "power_of_god"]
+  },
+  {
+    "reference": "John 20:22-23",
+    "book": "John",
+    "chapter": 20,
+    "verse": "22-23",
+    "text": "[22] When he had said this, he breathed on them; and he said to them: Receive ye the Holy Ghost. [23] Whose sins you shall forgive, they are forgiven them; and whose sins you shall retain, they are retained.",
+    "tags": ["holy_spirit", "christ", "sin", "new_testament"]
+  },
+  {
+    "reference": "Isaiah 11:2",
+    "book": "Isaiah",
+    "chapter": 11,
+    "verse": "2",
+    "text": "And the spirit of the Lord shall rest upon him: the spirit of wisdom, and of understanding, the spirit of counsel, and of fortitude, the spirit of knowledge, and of godliness.",
+    "tags": ["holy_spirit", "wisdom", "old_testament"]
+  },
+  {
+    "reference": "Psalm 50:12-13",
+    "book": "Psalm",
+    "chapter": 50,
+    "verse": "12-13",
+    "text": "[12] Create a clean heart in me, O God: and renew a right spirit within my bowels. [13] Cast me not away from thy face; and take not thy holy spirit from me.",
+    "tags": ["holy_spirit", "prayer", "sin", "old_testament"]
   }
 ]
