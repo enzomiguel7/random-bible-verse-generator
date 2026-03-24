@@ -1,8 +1,8 @@
 const API_URL = 'http://localhost:5186';
 
 const ALL_TAGS = [
-    'grace', 'weakness', 'power_of_God', 'christ', 'mary', 
-    'old_testament', 'new_testament', 'salvation', 'sin', 'prayer', 'wisdom', 'Holy Spirit'
+    'grace', 'weakness', 'power_of_God', 'Christ', 'Mary', 
+    'old_testament', 'new_testament', 'salvation', 'sin', 'prayer', 'wisdom', 'Holy_Spirit'
 ];
 
 let selectedTags = new Set();
