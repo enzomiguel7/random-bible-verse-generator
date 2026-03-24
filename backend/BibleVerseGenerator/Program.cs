@@ -8,6 +8,15 @@ using Microsoft.OpenApi;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy(policy =>
+    {
+        policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+    });
+});
+
+// ... antes do app.Run()
 builder.Services.ConfigureHttpJsonOptions(opt =>
 {
     opt.SerializerOptions.WriteIndented = true;
@@ -17,6 +26,7 @@ builder.Services.AddDbContext<BibleContext>(opt => opt.UseSqlite("Data Source=Bi
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 var app = builder.Build();
 
+app.UseCors();
 // adiciona um scope para conseguir ter acesso ao BibleContext que é scoped por padrão, só cria uma instância em requisições HTTP
 using (var scope = app.Services.CreateScope())
 {

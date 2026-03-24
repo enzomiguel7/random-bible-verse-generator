@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Bible Verse Generator | Glass UI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;700&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700&display=swap" rel="stylesheet"/>
+    
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#bb9eff",
+              "background": "#0d0d18",
+              "surface-container": "#181826",
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+        body {
+            background: radial-gradient(circle at top right, #4B0082, #0d0d18), 
+                        radial-gradient(circle at bottom left, #0000FF, #0d0d18);
+            background-attachment: fixed;
+            color: white;
+        }
+        .celestial-blur { backdrop-filter: blur(40px); -webkit-backdrop-filter: blur(40px); }
+        .ghost-border { border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glow-button { 
+            background: linear-gradient(to right, #bb9eff, #af8dff); 
+            box-shadow: 0 0 25px rgba(187, 158, 255, 0.4); 
+        }
+        .tag-active { 
+            background-color: rgba(187, 158, 255, 0.4) !important; 
+            border-color: #bb9eff !important;
+            box-shadow: 0 0 10px rgba(187, 158, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen font-body flex items-center justify-center p-4 md:p-6 overflow-x-hidden">
+    <main class="w-full max-w-2xl mx-auto">
+        <section class="bg-surface-container/10 celestial-blur ghost-border rounded-3xl p-6 md:p-10 shadow-2xl space-y-6 relative overflow-hidden">
+            
+            <div class="space-y-3">
+                <label class="text-[10px] uppercase tracking-[0.2em] opacity-50 ml-1 font-bold">Filtrar Categorias</label>
+                <div id="available-tags" class="flex flex-wrap gap-2"></div>
+            </div>
+
+            <hr class="border-white/5">
+
+            <div class="flex flex-col space-y-4 relative"> <span class="material-symbols-outlined text-primary text-3xl opacity-40">format_quote</span>
+                
+                <div class="min-h-[100px] md:min-h-[130px] flex items-start relative">
+                    <blockquote id="verse-text" class="text-xl md:text-2xl font-light leading-relaxed w-full transition-all duration-300">
+                        Selecione as tags e clique em Reveal.
+                    </blockquote>
+
+                    <div id="loading-indicator" class="absolute inset-0 flex items-center justify-center bg-[#0d0d18]/20 backdrop-blur-sm opacity-0 pointer-events-none transition-opacity duration-300 rounded-xl">
+                        <span class="material-symbols-outlined animate-spin text-primary text-4xl">autorenew</span>
+                    </div>
+                </div>
+
+                <div class="flex flex-col gap-2 border-t border-white/5 pt-4"> <div class="flex items-center gap-3 h-6">
+                        <span class="w-6 h-[1px] bg-white/20"></span>
+                        <cite id="verse-reference" class="text-primary font-bold not-italic tracking-wide text-md"></cite>
+                    </div>
+                    
+                    <div id="verse-tags-display" class="flex flex-wrap gap-2 ml-9 min-h-[24px]"></div>
+                </div>
+            </div>
+
+            <button id="btn-reveal" class="glow-button w-full py-4 rounded-2xl text-background font-black hover:brightness-110 active:scale-[0.98] transition-all flex items-center justify-center gap-3 text-md tracking-tighter">
+                <span class="material-symbols-outlined font-bold">auto_awesome</span>
+                REVEAL NEW VERSE
+            </button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
