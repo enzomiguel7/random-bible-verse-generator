@@ -4,7 +4,7 @@
     "book": "2 Corinthians",
     "chapter": 12,
     "verse": "9",
-    "text": "But he said to me, “My grace is sufficient for you, for my power is made perfect in weakness.” I will all the more gladly boast of my weaknesses, that the power of Christ may rest upon me.",
+    "text": "And he said to me: My grace is sufficient for thee: for power is made perfect in infirmity. Gladly therefore will I glory in my infirmities, that the power of Christ may dwell in me.",
     "tags": ["grace", "weakness", "power_of_god", "christ", "new_testament"]
   },
   {
@@ -12,7 +12,7 @@
     "book": "Genesis",
     "chapter": 3,
     "verse": "15",
-    "text": "I will put enmity between you and the woman, and between your seed and her seed; he shall bruise your head, and you shall bruise his heel.”",
+    "text": "I will put enmities between thee and the woman, and thy seed and her seed: she shall crush thy head, and thou shalt lie in wait for her heel.",
     "tags": ["old_testament", "salvation"]
   },
   {
@@ -20,7 +20,7 @@
     "book": "Philippians",
     "chapter": 4,
     "verse": "6",
-    "text": "Have no anxiety at all, but in everything, by prayer and petition, with thanksgiving, make your requests known to God.",
+    "text": "Be nothing solicitous: but in every thing, by prayer and supplication, with thanksgiving, let your petitions be made known to God.",
     "tags": ["prayer", "new_testament"]
   },
   {
@@ -28,7 +28,7 @@
     "book": "John",
     "chapter": 14,
     "verse": "6",
-    "text": "Jesus said to him, \"I am the way and the truth and the life. No one comes to the Father except through me.\"",
+    "text": "Jesus saith to him: I am the way, and the truth, and the life. No man cometh to the Father, but by me.",
     "tags": ["christ", "salvation", "new_testament"]
   },
   {
@@ -36,7 +36,7 @@
     "book": "Romans",
     "chapter": 6,
     "verse": "23",
-    "text": "For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.",
+    "text": "For the wages of sin is death. But the grace of God, life everlasting, in Christ Jesus our Lord.",
     "tags": ["sin", "grace", "christ", "salvation", "new_testament"]
   },
   {
@@ -44,7 +44,7 @@
     "book": "Romans",
     "chapter": 6,
     "verse": "1-4",
-    "text": "[1] What then shall we say? Shall we persist in sin that grace may abound? Of course not! [2] How can we who died to sin yet live in it?b [3] Or are you unaware that we who were baptized into Christ Jesus were baptized into his death? [4] We were indeed buried with him through baptism into death, so that, just as Christ was raised from the dead by the glory of the Father, we too might live in newness of life.",
+    "text": "[1] What shall we say then? shall we continue in sin, that grace may abound? [2] God forbid. For we that are dead to sin, how shall we live any longer therein? [3] Know you not that all we, who are baptized in Christ Jesus, are baptized in his death? [4] For we are buried together with him by baptism into death; that as Christ is risen from the dead by the glory of the Father, so we also may walk in newness of life.",
     "tags": ["sin", "grace", "christ", "new_testament"]
   },
   {
@@ -60,7 +60,7 @@
     "book": "John",
     "chapter": 2,
     "verse": "11",
-    "text": "Jesus did this as the beginning of his signs* in Cana in Galilee and so revealed his glory, and his disciples began to believe in him.",
+    "text": "This beginning of miracles did Jesus in Cana of Galilee; and manifested his glory, and his disciples believed in him.",
     "tags": ["christ", "power_of_god", "new_testament"]
   },
   {
@@ -72,12 +72,12 @@
     "tags": ["mary", "grace", "new_testament"]
   },
   {
-    "reference": "Luke 1:40-42",
+    "reference": "Luke 1:41-42",
     "book": "Luke",
     "chapter": 1,
-    "verse": "40-42",
+    "verse": "41-42",
     "text": "[41] And it came to pass, that when Elizabeth heard the salutation of Mary, the infant leaped in her womb. And Elizabeth was filled with the Holy Ghost: [42] And she cried out with a loud voice, and said: Blessed art thou among women, and blessed is the fruit of thy womb.",
-    "tags": ["mary", "new_testament"]
+    "tags": ["mary", "new_testament", "holy_spirit"]
   },
   {
     "reference": "Proverbs 1:7",
@@ -156,7 +156,167 @@
     "book": "Philippians",
     "chapter": 4,
     "verse": "13",
-    "text": "I can do all these things in him who strengtheneth me.",
+    "text": "I can do all things in him who strengtheneth me.",
     "tags": ["power_of_god", "weakness", "new_testament"]
+  },
+  {
+    "reference": "Ephesians 4:30",
+    "book": "Ephesians",
+    "chapter": 4,
+    "verse": "30",
+    "text": "And grieve not the holy Spirit of God: whereby you are sealed unto the day of redemption.",
+    "tags": ["holy_spirit", "salvation", "new_testament"]
+  },
+  {
+    "reference": "Ephesians 4:32",
+    "book": "Ephesians",
+    "chapter": 4,
+    "verse": "32",
+    "text": "And be ye kind one to another; merciful, forgiving one another, even as God hath forgiven you in Christ.",
+    "tags": ["grace", "christ", "new_testament"]
+  },
+  {
+    "reference": "Proverbs 3:34",
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": "34",
+    "text": "He shall scorn the scorners, and to the meek he will give grace.",
+    "tags": ["grace", "wisdom", "old_testament"]
+  },
+  {
+    "reference": "Proverbs 3:22",
+    "book": "Proverbs",
+    "chapter": 3,
+    "verse": "22",
+    "text": "And there shall be life to thy soul, and grace to thy mouth.",
+    "tags": ["grace", "wisdom", "old_testament"]
+  },
+  {
+    "reference": "Proverbs 16:24",
+    "book": "Proverbs",
+    "chapter": 16,
+    "verse": "24",
+    "text": "Well ordered words are as a honeycomb: sweet to the soul, and health to the bones.",
+    "tags": ["wisdom", "old_testament"]
+  },
+  {
+    "reference": "Proverbs 21:21",
+    "book": "Proverbs",
+    "chapter": 21,
+    "verse": "21",
+    "text": "He that followeth justice and mercy, shall find life, justice, and glory.",
+    "tags": ["wisdom", "salvation", "old_testament"]
+  },
+  {
+    "reference": "Wisdom 3:9",
+    "book": "Wisdom",
+    "chapter": 3,
+    "verse": "9",
+    "text": "They that trust in him, shall understand the truth: and they that are faithful in love shall rest in him: for grace and peace is to his elect.",
+    "tags": ["grace", "salvation", "wisdom", "old_testament"]
+  },
+  {
+    "reference": "Sirach 4:25",
+    "book": "Sirach",
+    "chapter": 4,
+    "verse": "25",
+    "text": "For there is a shame that bringeth sin, and there is a shame that bringeth glory and grace.",
+    "tags": ["grace", "sin", "wisdom", "old_testament"]
+  },
+  {
+    "reference": "Psalm 118:21",
+    "book": "Psalm",
+    "chapter": 118,
+    "verse": "21",
+    "text": "I will praise thee: because thou hast heard me, and art become my salvation.",
+    "tags": ["salvation", "prayer", "old_testament"]
+  },
+  {
+    "reference": "Psalm 54:23",
+    "book": "Psalm",
+    "chapter": 54,
+    "verse": "23",
+    "text": "Cast thy care upon the Lord, and he shall sustain thee: he shall not suffer the just to waver for ever.",
+    "tags": ["prayer", "weakness", "old_testament"]
+  },
+  {
+    "reference": "Matthew 5:3",
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": "3",
+    "text": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+    "tags": ["grace", "salvation", "new_testament"]
+  },
+  {
+    "reference": "Matthew 5:8",
+    "book": "Matthew",
+    "chapter": 5,
+    "verse": "8",
+    "text": "Blessed are the clean of heart: for they shall see God.",
+    "tags": ["salvation", "grace", "new_testament"]
+  },
+  {
+    "reference": "James 4:6",
+    "book": "James",
+    "chapter": 4,
+    "verse": "6",
+    "text": "But he giveth greater grace. Wherefore he saith: God resisteth the proud, and giveth grace to the humble.",
+    "tags": ["grace", "new_testament"]
+  },
+  {
+    "reference": "Psalm 83:12",
+    "book": "Psalm",
+    "chapter": 83,
+    "verse": "12",
+    "text": "For God loveth mercy and truth: the Lord will give grace and glory.",
+    "tags": ["grace", "old_testament"]
+  },
+  {
+    "reference": "Proverbs 4:7",
+    "book": "Proverbs",
+    "chapter": 4,
+    "verse": "7",
+    "text": "The beginning of wisdom, get wisdom, and with all thy possession purchase prudence.",
+    "tags": ["wisdom", "old_testament"]
+  },
+  {
+    "reference": "John 14:26",
+    "book": "John",
+    "chapter": 14,
+    "verse": "26",
+    "text": "But the Paraclete, the Holy Ghost, whom the Father will send in my name, he will teach you all things, and bring all things to your mind, whatsoever I shall have said to you.",
+    "tags": ["holy_spirit", "new_testament", "wisdom"]
+  },
+  {
+    "reference": "Acts 1:8",
+    "book": "Acts",
+    "chapter": 1,
+    "verse": "8",
+    "text": "But you shall receive the power of the Holy Ghost coming upon you, and you shall be witnesses unto me in Jerusalem, and in all Judea, and Samaria, and even to the uttermost part of the earth.",
+    "tags": ["holy_spirit", "new_testament", "power_of_god"]
+  },
+  {
+    "reference": "Romans 5:5",
+    "book": "Romans",
+    "chapter": 5,
+    "verse": "5",
+    "text": "And hope confoundeth not: because the charity of God is poured forth in our hearts, by the Holy Ghost, who is given to us.",
+    "tags": ["holy_spirit", "new_testament", "grace"]
+  },
+  {
+    "reference": "1 Corinthians 6:19",
+    "book": "1 Corinthians",
+    "chapter": 6,
+    "verse": "19",
+    "text": "Or know you not, that your members are the temple of the Holy Ghost, who is in you, whom you have from God; and you are not your own?",
+    "tags": ["holy_spirit", "new_testament"]
+  },
+  {
+    "reference": "Luke 11:13",
+    "book": "Luke",
+    "chapter": 11,
+    "verse": "13",
+    "text": "If you then, being evil, know how to give good gifts to your children, how much more will your Father from heaven give the good Spirit to them that ask him?",
+    "tags": ["holy_spirit", "new_testament", "prayer"]
   }
 ]
