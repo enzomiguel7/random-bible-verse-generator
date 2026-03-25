@@ -99,6 +99,8 @@ cd bible-verse-generator
 2. Run the API
 ```bash
 cd BibleVerseGenerator
+cd backend
+cd BibleVerseGenerator
 dotnet run
 ```
 The API will start at `http://localhost:5186`
